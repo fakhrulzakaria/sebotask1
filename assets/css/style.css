@@ -363,7 +363,7 @@ li.advantages:hover {
 }
 
 .testimonial {
-    height: 1685px;
+    height: 1385px;
     background-image: linear-gradient(176deg, #351C8B, #000000);
     padding-top: 230px;
     padding-left: 160px !important;
@@ -476,4 +476,133 @@ p.position {
     letter-spacing: normal;
     color: #d8d8d8;
     padding-top: 170px;
+}
+
+form {
+    padding-top: 170px;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 447px;
+    height: 62px;
+    border-radius: 100px;
+    background-color: rgba(225, 225, 225, 0.1);
+    padding: 24px 25px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    color: rgba(197, 197, 197, .7);
+}
+
+input::placeholder {
+    opacity: .7;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #c5c5c5;
+}
+
+input[type="submit"] {
+    width: 142px;
+    height: 48px;
+    border-radius: 26px;
+    background-color: #fe4f00;
+    position: absolute;
+    top: 177px;
+    right: 130px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 200px !important;
+}
+
+.footer h2 {
+    width: 87px;
+    height: 32px;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d8d8d8 !important;
+}
+
+.footer p {
+    width: 395px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #d8d8d8;
+}
+
+.footer>.col-md-6:nth-child(2) {
+    position: relative;
+}
+
+.footer ul {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.footer ul:nth-child(2) {
+    left: 250px;
+}
+
+.footer ul:nth-child(3) {
+    left: 480px;
+}
+
+li.title {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d8d8d8;
+    margin-bottom: 17px;
+}
+
+ul.products li>a {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d8d8d8;
+}
+
+ul.company li>a {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d8d8d8;
+}
+
+ul.resources li>a {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d8d8d8;
 }
