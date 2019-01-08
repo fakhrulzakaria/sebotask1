@@ -19,13 +19,18 @@
 <body>
     <div class="header container-fluid">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5 col-xs-5">
                 <div class="zubia-logo">
                     zubia
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 col-sm-7 col-xs-7">
                 <div class="navbar">
+                    <svg width="22" height="14" fill="white" class="menu" onclick="openNav()">
+                        <rect height="2" width="22" />
+                        <rect height="2" width="22" y="6" />
+                        <rect height="2" width="22" y="12" />
+                    </svg>
                     <ul>
                         <li>Product</li>
                         <li>Service</li>
@@ -35,6 +40,22 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div id="overlay">
+        </div>
+        <div class="sidebar" id="myNav">
+            <h6>Zubia</h6>
+            <svg viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" style="opacity: .8" class="close"
+                onclick="closeNav()">
+                <line x1="1" y1="22" x2="22" y2="1" stroke="black" stroke-width="2" />
+                <line x1="1" y1="1" x2="22" y2="22" stroke="black" stroke-width="2" />
+            </svg>
+            <ul>
+                <li>Product</li>
+                <li>Service</li>
+                <li>Package</li>
+                <li>Login</li>
+            </ul>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -244,6 +265,21 @@
     $("li.advantages").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
     });
+</script>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "290px";
+        document.getElementById("overlay").style.display = "block";
+        var x = document.getElementsByTagName("BODY")[0];
+        x.style.overflowY = "hidden";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0px";
+        document.getElementById("overlay").style.display = "none";
+        var x = document.getElementsByTagName("BODY")[0];
+        x.style.overflowY = "auto";
+    }
 </script>
 
 </html>
