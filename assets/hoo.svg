@@ -6,5 +6,5 @@
       		<stop offset="100%" style="stop-color:#96DEDA;stop-opacity:1" />
     	</linearGradient>
   	</defs>
-    <path fill="url(#grad3)" d="M0 0 l1000 200 v800 l-1000 -200" />
+    <path fill="#fbfbfe" d="M0 0 l1000 200 v800 l-1000 -200" />
 </svg>
