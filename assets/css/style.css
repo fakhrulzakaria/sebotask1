@@ -574,6 +574,10 @@ img.learn-more {
     color: #ffffff;
 }
 
+.control {
+    visibility: hidden;
+}
+
 .impressions h1 {
     width: 457px;
     height: 100px;
@@ -680,19 +684,22 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 1045px) {
-    div.advantages-container {
+    /* div.advantages-container {
         margin: 0 !important;
-    }
+    } */
 }
 
 @media screen and (max-width: 1000px) {
     .list {
         margin-right: 1px;
+        text-align: center;
+        flex: 0 0 100% !important;
+        max-width: 100% !important
     }
 
     .list h1 {
-        width: 1000px;
         margin-bottom: 0 !important;
+        display: inline;
     }
 
     .list>ul {
@@ -705,7 +712,13 @@ input[type="submit"]:hover {
 
     .list>ul>li {
         width: unset;
-        box-sizing: border-box
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .list>ul>li.active {
+        width: unset;
+        padding: 15px;
     }
 
     .list li {
@@ -756,7 +769,7 @@ input[type="submit"]:hover {
     .list>h1 {
         /* width: unset;
         height: unset; */
-        text-align: center;
+        /* text-align: center; */
     }
 }
 
@@ -855,5 +868,32 @@ input[type="submit"]:hover {
 
     .brand {
         display: none !important
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .list>ul>li {
+        padding: unset;
+        padding-bottom: 5px;
+    }
+
+    .list>ul>li.active {
+        padding: unset;
+        padding-bottom: 5px;
+        box-shadow: unset;
+        background-color: transparent;
+        color: #808080 !important;
+        border-bottom: 1px solid #fe4900;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .col-sm-2>img {
+        visibility: hidden;
+    }
+
+    .control {
+        visibility: visible;
+        margin-top: 30px;
     }
 }
